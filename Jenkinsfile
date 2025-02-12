@@ -1,10 +1,9 @@
 pipeline {
     agent any
-
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Harsh5442/maven-calc-task6.git'
+                git branch: 'main', url: 'https://github.com/Harsh5442/maven-calc-task6.git'
             }
         }
         stage('Clean') {
